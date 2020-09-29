@@ -4,7 +4,7 @@
 
 ![screenshot](./screenshot.PNG)
 
-View the app live [here]()
+View the app live [here](https://raw.githack.com/somoye123/Weather-app/feature/dist/index.html)
 
 ## Built With
 
