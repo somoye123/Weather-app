@@ -11,11 +11,11 @@ export default (() => {
       farenheit.className = '';
 
       const celSpan = document.querySelectorAll('#celcius-temp');
-      celSpan.forEach((element) => {
+      celSpan.forEach(element => {
         element.className = '';
       });
       const farSpan = document.querySelectorAll('#farenheit-temp');
-      farSpan.forEach((element) => {
+      farSpan.forEach(element => {
         element.className = 'hide';
       });
     });
@@ -24,16 +24,25 @@ export default (() => {
       farenheit.className = 'active';
 
       const celSpan = document.querySelectorAll('#celcius-temp');
-      celSpan.forEach((element) => {
+      celSpan.forEach(element => {
         element.className = 'hide';
       });
       const farSpan = document.querySelectorAll('#farenheit-temp');
-      farSpan.forEach((element) => {
+      farSpan.forEach(element => {
         element.className = '';
       });
     });
   };
 
-  
-  return { tempsButtons };
+  const searchbutton = () => {
+    document.getElementById('search').addEventListener('click', () => {
+      const city = handleForm('search-form');
+      if (city) {
+        AppLogic.updateDefaultData(city);
+      } else {
+        alert('please provide a location');
+      }
+    });
+  };
+  return { searchbutton, tempsButtons };
 })();
