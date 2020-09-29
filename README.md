@@ -23,8 +23,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Clone the repository on your local machine
-- cd into the folder
+- git clone https://github.com/somoye123/Weather-app.git
+- Weather-app
+- Copy the absolute path of the index file, paste on your browser and click on enter
 
 ### for webpack run:
 
